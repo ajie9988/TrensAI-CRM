@@ -4,6 +4,10 @@
 >
 > A modern, modular SaaS platform that brings together WhatsApp messaging, CRM, live chat, and AI-powered automation.
 
+<div align="center">
+  <img src="docs/img/demo.gif" alt="TrensAI CRM Demo" width="800">
+</div>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/ajie9988/trensai-crm?style=flat-square&logo=github)](https://github.com/ajie9988/trensai-crm)
 [![GitHub Forks](https://img.shields.io/github/forks/ajie9988/trensai-crm?style=flat-square&logo=github)](https://github.com/ajie9988/trensai-crm)
