@@ -1,0 +1,16 @@
+{
+    "name": "Broadcast",
+    "alias": "broadcast",
+    "description": "Broadcast / bulk messaging module",
+    "keywords": [
+        "broadcast",
+        "campaign",
+        "bulk"
+    ],
+    "priority": 20,
+    "providers": [
+        "Modules\\Broadcast\\Providers\\BroadcastServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

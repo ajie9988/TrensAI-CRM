@@ -1,0 +1,16 @@
+{
+    "name": "Device",
+    "alias": "device",
+    "description": "WhatsApp device management module",
+    "keywords": [
+        "device",
+        "whatsapp",
+        "qr"
+    ],
+    "priority": 10,
+    "providers": [
+        "Modules\\Device\\Providers\\DeviceServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

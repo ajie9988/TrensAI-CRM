@@ -1,0 +1,16 @@
+{
+    "name": "Settings",
+    "alias": "settings",
+    "description": "Workspace settings and configuration module",
+    "keywords": [
+        "settings",
+        "config",
+        "workspace"
+    ],
+    "priority": 5,
+    "providers": [
+        "Modules\\Settings\\Providers\\SettingsServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

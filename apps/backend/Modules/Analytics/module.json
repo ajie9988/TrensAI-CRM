@@ -1,0 +1,16 @@
+{
+    "name": "Analytics",
+    "alias": "analytics",
+    "description": "Analytics and reporting module",
+    "keywords": [
+        "analytics",
+        "reports",
+        "stats"
+    ],
+    "priority": 30,
+    "providers": [
+        "Modules\\Analytics\\Providers\\AnalyticsServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

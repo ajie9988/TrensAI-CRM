@@ -1,0 +1,17 @@
+{
+    "name": "CRM",
+    "alias": "crm",
+    "description": "CRM pipeline and deal management module",
+    "keywords": [
+        "crm",
+        "pipeline",
+        "deal",
+        "sales"
+    ],
+    "priority": 25,
+    "providers": [
+        "Modules\\CRM\\Providers\\CRMServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

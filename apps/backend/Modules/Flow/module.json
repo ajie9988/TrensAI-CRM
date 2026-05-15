@@ -1,0 +1,16 @@
+{
+    "name": "Flow",
+    "alias": "flow",
+    "description": "Automation flow builder module",
+    "keywords": [
+        "flow",
+        "automation",
+        "chatbot"
+    ],
+    "priority": 20,
+    "providers": [
+        "Modules\\Flow\\Providers\\FlowServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

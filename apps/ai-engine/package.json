@@ -1,0 +1,29 @@
+{
+    "name": "trensai-crm-ai-engine",
+    "version": "1.0.0",
+    "description": "AI Engine supporting multiple providers",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "nodemon --watch src --exec ts-node src/index.ts",
+        "build": "tsc",
+        "start": "node dist/index.js"
+    },
+    "dependencies": {
+        "@anthropic-ai/sdk": "^0.96.0",
+        "@google/generative-ai": "^0.24.1",
+        "axios": "^1.16.1",
+        "dotenv": "^16.6.1",
+        "express": "^4.22.2",
+        "openai": "^6.37.0",
+        "pino": "^8.16.2",
+        "pino-pretty": "^10.2.3"
+    },
+    "devDependencies": {
+        "@types/dotenv": "^6.1.1",
+        "@types/express": "^4.17.25",
+        "@types/node": "^20.19.41",
+        "nodemon": "^3.1.14",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}

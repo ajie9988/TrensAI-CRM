@@ -1,0 +1,62 @@
+GNU AFFERO GENERAL PUBLIC LICENSE
+Version 3, 19 November 2007
+
+Copyright (C) 2024 WhatsApp AI CRM - TrensAI CRM Contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+TERMS AND CONDITIONS FOR USE, COPYING, DISTRIBUTION, AND MODIFICATION
+
+0. Definitions.
+This License applies to any program or other work which contains a notice
+placed by the copyright holder saying it may be distributed under the terms
+of this Affero GPL v3.
+
+1. Source Code.
+The "source code" for a work means the preferred form of the work for
+making modifications to it.
+
+2. Copyleft Requirements.
+If you modify this program, or any work based on it, by changing or removing
+the program's copyright notices or by not complying with the requirements of
+this license, you must:
+- Clearly mark your modifications as such
+- Obtain copyright assignment from contributors
+- Distribute the modified work under the terms of this AGPL v3 license
+
+3. Restrictions.
+If you run a modified version of this program in a server and allow third
+parties to interact with it through a network, you must make the source code
+available to them under the same terms.
+
+4. Disclaimers.
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+For the full text of this license, visit:
+https://www.gnu.org/licenses/agpl-3.0.html
+
+COMMERCIAL LICENSE
+
+For commercial or proprietary use that requires a different license, please
+contact: licensing@example.com
+
+CONTRIBUTING
+
+By submitting a contribution to this project, you agree that:
+1. Your contribution is original work
+2. You have the right to grant the license
+3. Your contribution is released under AGPL v3
+4. You grant the project perpetual, worldwide license to your contribution

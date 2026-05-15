@@ -1,0 +1,16 @@
+{
+    "name": "Automation",
+    "alias": "automation",
+    "description": "Trigger and automation rules module",
+    "keywords": [
+        "automation",
+        "trigger",
+        "rule"
+    ],
+    "priority": 25,
+    "providers": [
+        "Modules\\Automation\\Providers\\AutomationServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

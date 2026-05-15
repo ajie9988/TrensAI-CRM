@@ -1,0 +1,16 @@
+{
+    "name": "Plugin",
+    "alias": "plugin",
+    "description": "Plugin / extension management module",
+    "keywords": [
+        "plugin",
+        "extension",
+        "addon"
+    ],
+    "priority": 40,
+    "providers": [
+        "Modules\\Plugin\\Providers\\PluginServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

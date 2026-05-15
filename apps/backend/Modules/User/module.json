@@ -1,0 +1,17 @@
+{
+    "name": "User",
+    "alias": "user",
+    "description": "User management module",
+    "keywords": [
+        "user",
+        "team",
+        "role",
+        "permission"
+    ],
+    "priority": 5,
+    "providers": [
+        "Modules\\User\\Providers\\UserServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

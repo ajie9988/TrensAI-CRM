@@ -1,0 +1,17 @@
+{
+    "name": "Chat",
+    "alias": "chat",
+    "description": "Chat and conversation management module",
+    "keywords": [
+        "chat",
+        "inbox",
+        "conversation",
+        "message"
+    ],
+    "priority": 10,
+    "providers": [
+        "Modules\\Chat\\Providers\\ChatServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

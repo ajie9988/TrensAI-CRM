@@ -1,0 +1,79 @@
+# .gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Backend
+apps/backend/.env
+apps/backend/.env.local
+apps/backend/vendor/
+apps/backend/bootstrap/cache/
+apps/backend/storage/logs/
+apps/backend/storage/app/uploads/
+apps/backend/.php-cs-fixer.cache
+apps/backend/composer.lock
+apps/backend/node_modules/
+
+# Frontend
+apps/frontend/node_modules/
+apps/frontend/.next/
+apps/frontend/out/
+apps/frontend/dist/
+apps/frontend/.env.local
+apps/frontend/.env.*.local
+apps/frontend/npm-debug.log*
+apps/frontend/yarn-debug.log*
+apps/frontend/yarn-error.log*
+
+# WhatsApp Engine
+apps/wa-engine/node_modules/
+apps/wa-engine/dist/
+apps/wa-engine/sessions/
+apps/wa-engine/.env
+apps/wa-engine/npm-debug.log*
+
+# AI Engine
+apps/ai-engine/node_modules/
+apps/ai-engine/dist/
+apps/ai-engine/.env
+apps/ai-engine/npm-debug.log*
+
+# Worker
+apps/worker/node_modules/
+apps/worker/dist/
+apps/worker/.env
+
+# Docker
+.dockerignore
+
+# Backups
+backups/
+*.sql
+*.sql.gz
+*.tar.gz
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Package manager
+package-lock.json
+composer.lock

@@ -1,0 +1,16 @@
+{
+    "name": "Contact",
+    "alias": "contact",
+    "description": "Contact management module",
+    "keywords": [
+        "contact",
+        "crm",
+        "lead"
+    ],
+    "priority": 10,
+    "providers": [
+        "Modules\\Contact\\Providers\\ContactServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}

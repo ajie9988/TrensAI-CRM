@@ -1,0 +1,17 @@
+{
+    "name": "AI",
+    "alias": "ai",
+    "description": "AI integration module (OpenAI, Claude, Gemini, Ollama)",
+    "keywords": [
+        "ai",
+        "openai",
+        "llm",
+        "chatgpt"
+    ],
+    "priority": 30,
+    "providers": [
+        "Modules\\AI\\Providers\\AIServiceProvider"
+    ],
+    "aliases": {},
+    "files": []
+}
