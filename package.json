@@ -15,12 +15,22 @@
     "docker:down": "docker-compose down"
   },
   "devDependencies": {
-    "turbo": "latest",
-    "prettier": "latest"
+    "prettier": "^3.8.3",
+    "turbo": "^2.9.14"
   },
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"
   },
-  "packageManager": "pnpm@9.1.0"
+  "packageManager": "pnpm@9.1.0",
+  "pnpm": {
+    "overrides": {
+      "next": "^14.2.10",
+      "minimatch": "^9.0.0",
+      "glob": "^10.0.0",
+      "music-metadata": "^7.14.0",
+      "braces": "^3.0.3",
+      "ws": "^8.17.1"
+    }
+  }
 }
