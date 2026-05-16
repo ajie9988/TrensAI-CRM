@@ -1,5 +1,15 @@
 # .gitignore
 
+# Workspace
+node_modules/
+.pnpm-debug.log
+.turbo/
+
+# Build
+dist/
+.next/
+out/
+
 # IDE
 .vscode/
 .idea/
@@ -77,3 +87,4 @@ build/
 # Package manager
 package-lock.json
 composer.lock
+node_modules

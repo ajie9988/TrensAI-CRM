@@ -1,0 +1,10 @@
+{
+  "name": "trensai-crm-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "php artisan serve --port=8000",
+    "test": "php artisan test",
+    "build": "echo 'No build step for Laravel'"
+  }
+}

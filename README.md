@@ -15,7 +15,11 @@
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)](https://nextjs.org/)
 [![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?style=flat-square&logo=laravel)](https://laravel.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![pnpm](https://img.shields.io/badge/pnpm-9-orange?style=flat-square&logo=pnpm)](https://pnpm.io/)
+[![Turborepo](https://img.shields.io/badge/Turborepo-Latest-EF4444?style=flat-square&logo=turborepo)](https://turbo.build/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)](https://www.docker.com/)
+[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI-2088FF?style=flat-square&logo=github-actions)](https://github.com/features/actions)
+[![CodeQL](https://img.shields.io/badge/Security-CodeQL-blue?style=flat-square&logo=github)](https://codeql.github.com/)
 
 ## ✨ Features
 
@@ -70,11 +74,13 @@
 - Retry mechanism
 
 ### 🏗️ Architecture
-- **Modular Monolith** with clean domain boundaries
-- **Multi-Tenant** SaaS ready
-- **Event-Driven** processing
-- **Queue-Based** background jobs
-- **Docker** containerization
+- **Monorepo** managed with **pnpm Workspaces**
+- **Turborepo** for optimized build pipeline and caching
+- **GitHub Actions** CI/CD with automated testing
+- **CodeQL** static analysis for advanced security
+- **Trivy** vulnerability scanning for Docker images
+- **Renovate** for automated dependency management
+- **Docker** containerization with optimized multi-stage builds
 - **Fully Typed** TypeScript frontend
 
 ## 🚀 Quick Start
@@ -91,18 +97,21 @@
 git clone https://github.com/ajie9988/trensai-crm.git
 cd trensai-crm
 
+# Install pnpm (if not already installed)
+npm install -g pnpm
+
+# Install dependencies for the whole monorepo
+pnpm install
+
 # Copy environment file
 cp .env.example .env
 
 # Start with Docker
-docker compose up -d
+pnpm docker:up
 
 # Access the platform
 # Dashboard: http://localhost:3000
 # API: http://localhost:8000/api
-
-# Critical Setup (if not using Docker)
-php artisan storage:link
 ```
 
 **Default Credentials:**
