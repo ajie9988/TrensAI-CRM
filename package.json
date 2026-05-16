@@ -12,10 +12,17 @@
     "clean": "turbo clean && rm -rf node_modules",
     "docker:build": "docker-compose build",
     "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down"
+    "docker:down": "docker-compose down",
+    "release": "release-it",
+    "release:dry": "release-it --dry-run",
+    "release:major": "release-it major",
+    "release:minor": "release-it minor",
+    "release:patch": "release-it patch"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^11.0.0",
     "prettier": "^3.8.3",
+    "release-it": "^20.0.1",
     "turbo": "^2.9.14"
   },
   "engines": {
