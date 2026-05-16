@@ -234,7 +234,7 @@ docker compose restart nginx
 
 ## Support
 
-- 📖 [Full Documentation](./docs/)
+- 📖 [Full Documentation](https://github.com/ajie9988/TrensAI-CRM/tree/main/docs)
 - 🐛 [Report Issues](https://github.com/ajie9988/trensai-crm/issues)
 - 💬 [Community Chat](https://github.com/ajie9988/trensai-crm/discussions)
 - 📧 [Email Support](mailto:support@example.com)
