@@ -9,7 +9,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/reverb": "^1.0",
         "laravel/tinker": "^2.8",
-        "nwidart/laravel-modules": "^10.0",
+        "nwidart/laravel-modules": "^13.0",
         "predis/predis": "^2.1",
         "league/event": "^3.0",
         "spatie/laravel-permission": "^6.1",
