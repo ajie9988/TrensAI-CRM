@@ -32,51 +32,29 @@ docker compose logs -f backend
 # Admin: admin@example.com / password123
 ```
 
-## Manual Setup (Without Docker)
+### Manual Setup (Without Docker)
 
-### Backend Setup
+Cukup gunakan pnpm untuk mengelola semua layanan Node.js sekaligus:
 
+```bash
+# 1. Instal pnpm
+npm install -g pnpm
+
+# 2. Instal semua dependencies (Monorepo)
+pnpm install
+
+# 3. Jalankan semua layanan sekaligus
+pnpm dev
+```
+
+### Backend Setup (Laravel)
 ```bash
 cd apps/backend
-
-# Install dependencies
 composer install
-
-# Copy environment
 cp .env.example .env
-
-# Generate app key
 php artisan key:generate
-
-# Run migrations
 php artisan migrate:fresh --seed
-
-# Start server
 php artisan serve
-```
-
-### Frontend Setup
-
-```bash
-cd apps/frontend
-
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-### WhatsApp Engine
-
-```bash
-cd apps/wa-engine
-
-# Install dependencies
-npm install
-
-# Start service
-npm run dev
 ```
 
 ## Environment Configuration
@@ -164,7 +142,7 @@ curl http://localhost:3001/status
 ### Frontend not loading
 ```bash
 # Check Next.js build
-docker compose exec frontend npm run build
+docker compose exec frontend pnpm run build
 
 # Restart frontend
 docker compose restart frontend

@@ -63,39 +63,20 @@ trensai-crm/
 │   └── worker/                    # Background job processor
 │       └── Uses backend Laravel container
 │
-├── packages/                       # Shared packages (for future expansion)
+├── packages/                       # Shared internal packages
 │   ├── sdk/                       # TypeScript SDK
 │   ├── shared-ui/                 # React component library
-│   ├── shared-types/              # Shared TypeScript types
+│   ├── shared-types/              # Shared TypeScript types (Initialized)
 │   └── flow-engine/               # Flow builder engine
 │
-├── docker/                         # Docker configurations
-│   ├── nginx/
-│   │   ├── nginx.conf            # Reverse proxy config
-│   │   └── conf.d/
-│   └── mysql/
-│       └── my.cnf                # MySQL optimization
-│
-├── docs/                           # Comprehensive documentation
-│   ├── README.md                 # Main project overview
-│   ├── INSTALL.md                # Installation guide (30-second setup)
-│   ├── API.md                    # Complete API documentation
-│   ├── ARCHITECTURE.md           # System architecture & design
-│   └── DOCKER.md                 # Docker deployment guide
-│
-├── scripts/                        # Utility scripts
-│   ├── setup.sh                  # One-command setup
-│   ├── reset-db.sh               # Database reset
-│   ├── backup.sh                 # Database backup
-│   └── cleanup.sh                # Docker cleanup
-│
-├── docker-compose.yml            # Complete stack orchestration
-├── .env.example                  # Environment configuration
-├── .gitignore                    # Git ignore rules
-├── LICENSE                       # AGPL v3 license
-├── CONTRIBUTING.md               # Contribution guidelines
-└── .github/                       # (Ready for GitHub setup)
-    └── workflows/                # (For CI/CD)
+├── pnpm-workspace.yaml             # Pnpm Workspace Config
+├── turbo.json                      # Turborepo Pipeline Config
+├── .github/                        # GitHub Config
+│   └── workflows/                  # CI/CD, CodeQL, Trivy
+├── renovate.json                   # Auto-update config (Optional)
+├── .env.example                    # Environment template
+├── docker-compose.yml              # Complete stack orchestration
+└── package.json                    # Root Package Manager config
 ```
 
 ---
@@ -544,8 +525,11 @@ docker compose up -d
 |-------|-----------|---------|
 | Backend | Laravel | 11 |
 | Language | PHP | 8.3 |
-| Frontend | Next.js | 14 |
+| Frontend | Next.js | 15.2.1 |
 | Frontend Lang | TypeScript | 5.3 |
+| Workspace | pnpm | 9 |
+| Build System | Turborepo | 2 |
+| Security | CodeQL & Trivy | Latest |
 | Styling | TailwindCSS | 3.3 |
 | Database | MySQL | 8.0 |
 | Cache | Redis | 7.0 |

@@ -34,25 +34,24 @@ docker compose exec backend php artisan migrate:fresh --seed
 ## 🛠️ Common Commands
 
 ### Local Development (Without Docker)
-Untuk menjalankan aplikasi secara lokal di sistem Anda (sangat disarankan saat tahap *development*), Anda perlu membuka **4 terminal terpisah** dan menjalankan perintah berikut di masing-masing foldernya:
+Cukup jalankan satu perintah di root folder untuk menyalakan semua layanan Node.js secara bersamaan menggunakan Turbo:
 
 ```bash
-# Terminal 1: Backend Laravel
-cd apps/backend
-php artisan serve
+# Instal pnpm (jika belum)
+npm install -g pnpm
 
-# Terminal 2: Frontend Next.js
-cd apps/frontend
-npm run dev
+# Instal semua dependencies
+pnpm install
 
-# Terminal 3: WhatsApp Engine
-cd apps/wa-engine
-npm run dev
-
-# Terminal 4: AI Engine
-cd apps/ai-engine
-npm run dev
+# Jalankan semua layanan sekaligus
+pnpm dev
 ```
+
+Ini akan menjalankan:
+- **Frontend** (Port 3000)
+- **Backend Laravel** (Port 8000 via `php artisan serve`)
+- **WhatsApp Engine** (Port 3001)
+- **AI Engine** (Port 3002)
 
 *(Catatan: Pastikan Anda juga memiliki server MySQL dan Redis yang aktif di background).*
 
@@ -75,10 +74,10 @@ docker compose exec backend bash
 ### Frontend (Docker)
 ```bash
 # Rebuild frontend
-docker compose exec frontend npm run build
+docker compose exec frontend pnpm run build
 
 # Install packages
-docker compose exec frontend npm install
+docker compose exec frontend pnpm install
 
 # Check logs
 docker compose logs -f frontend
@@ -123,7 +122,11 @@ trensai-crm/
 │   ├── frontend/         # Next.js 14 Dashboard
 │   ├── wa-engine/        # Baileys WhatsApp Server
 │   ├── ai-engine/        # AI Service (Gemini, dll)
-│   └── worker/           # Background jobs
+│   │   ├── types/                # TypeScript types
+│   │   ├── package.json          # Workspace package
+│   │   ├── Dockerfile            # Multi-stage build
+│   │   ├── tailwind.config.js    # Tailwind CSS
+│   │   └── next.config.mjs
 ├── docs/                 # Documentation
 ├── scripts/              # Utility scripts
 ├── docker/               # Docker configs
@@ -407,8 +410,8 @@ kubectl apply -f k8s/
    # Backend
    docker compose exec backend composer update
 
-   # Frontend
-   docker compose exec frontend npm update
+   # Frontend & Engines (Monorepo)
+   pnpm update
    ```
 
 5. **Keep Docker clean**

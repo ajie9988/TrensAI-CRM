@@ -86,8 +86,8 @@ docker compose logs -f --tail=100 backend
 # Run artisan command
 docker compose exec backend php artisan migrate:fresh --seed
 
-# Run NPM command
-docker compose exec frontend npm run build
+# Run pnpm command
+docker compose exec frontend pnpm run build
 
 # Access MySQL shell
 docker compose exec mysql mysql -u root -ppassword123
