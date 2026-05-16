@@ -29,8 +29,10 @@
       "react": "19.0.0",
       "react-dom": "19.0.0",
       "minimatch": "9.0.5",
-      "glob": "11.0.0",
+      "glob": "11.0.1",
       "music-metadata": "7.14.0",
+      "postcss": "8.4.40",
+      "file-type": "16.5.4",
       "braces": "3.0.3",
       "ws": "8.17.1"
     }
