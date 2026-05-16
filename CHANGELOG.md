@@ -1,5 +1,7 @@
 # Changelog
 
+# [1.1.0](https://github.com/ajie9988/TrensAI-CRM/compare/v1.0.1...v1.1.0) (2026-05-16)
+
 ## 1.0.1 (2026-05-16)
 
 
