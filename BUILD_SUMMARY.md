@@ -72,8 +72,8 @@ trensai-crm/
 ├── pnpm-workspace.yaml             # Pnpm Workspace Config
 ├── turbo.json                      # Turborepo Pipeline Config
 ├── .github/                        # GitHub Config
-│   └── workflows/                  # CI/CD, CodeQL, Trivy
-├── renovate.json                   # Auto-update config (Optional)
+│   ├── workflows/                  # CI/CD, CodeQL, Trivy
+│   └── dependabot.yml              # Auto-update config
 ├── .env.example                    # Environment template
 ├── docker-compose.yml              # Complete stack orchestration
 └── package.json                    # Root Package Manager config
@@ -525,11 +525,12 @@ docker compose up -d
 |-------|-----------|---------|
 | Backend | Laravel | 11 |
 | Language | PHP | 8.3 |
-| Frontend | Next.js | 15.2.1 |
+| Frontend | Next.js | 16.2.6 |
 | Frontend Lang | TypeScript | 5.3 |
 | Workspace | pnpm | 9 |
 | Build System | Turborepo | 2 |
 | Security | CodeQL & Trivy | Latest |
+| Auto-Update | Dependabot | GitHub Native |
 | Styling | TailwindCSS | 3.3 |
 | Database | MySQL | 8.0 |
 | Cache | Redis | 7.0 |

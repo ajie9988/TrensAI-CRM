@@ -79,7 +79,7 @@
 - **GitHub Actions** CI/CD with automated testing
 - **CodeQL** static analysis for advanced security
 - **Trivy** vulnerability scanning for Docker images
-- **Renovate** for automated dependency management
+- **Dependabot** for automated dependency management
 - **Docker** containerization with optimized multi-stage builds
 - **Fully Typed** TypeScript frontend
 
