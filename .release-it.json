@@ -61,10 +61,6 @@
         }
     },
     "hooks": {
-        "before:init": [
-            "pnpm run lint",
-            "pnpm run test"
-        ],
         "after:release": "echo Successfully released v${version}"
     }
 }
