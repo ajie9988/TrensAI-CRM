@@ -25,12 +25,12 @@
   "packageManager": "pnpm@9.1.0",
   "pnpm": {
     "overrides": {
-      "next": "^14.2.15",
-      "minimatch": "^9.0.5",
-      "glob": "^11.0.0",
-      "music-metadata": "^7.14.0",
-      "braces": "^3.0.3",
-      "ws": "^8.17.1"
+      "next": "15.0.0",
+      "minimatch": "9.0.5",
+      "glob": "11.0.0",
+      "music-metadata": "7.14.0",
+      "braces": "3.0.3",
+      "ws": "8.17.1"
     }
   }
 }
